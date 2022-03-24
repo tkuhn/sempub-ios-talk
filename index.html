@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Semantic Publishing</title>
+<title>Welcome to the New Era of Scientific Publishing</title>
 <link rel="stylesheet" href="dist/reset.css">
 <link rel="stylesheet" href="dist/reveal.css">
 <link rel="stylesheet" href="dist/theme/whitex.css">
@@ -22,7 +22,7 @@
 <div class="slides">
 
 <section>
-<h2><span class="cem">Semantic Publishing</span></h2>
+<h2><span class="cem">Welcome to the New Era of Scientific Publishing</span></h2>
 <p>
 <strong>Tobias Kuhn</strong><br>
 VU Amsterdam
@@ -47,23 +47,95 @@ VU Amsterdam
 </section>
 
 <section>
+<h3>Problem: Scientific Results are Represented in Plain Text Only</h3>
+<img class="plain stretch" src="img/paper.png"/>
+</section>
+
+<section>
 <h3>Relation Mining was not Good Enough in 2015</h3>
-<p>Results on chemical-disease relation extraction:</p>
+<p>Chemical-disease relation extraction:</p>
 <img class="plain stretch" src="img/biocreative2015.png"/>
 <p/>
 </section>
 
 <section>
 <img class="plain" style="width: 50%" src="img/biocreative2021logo.png"/>
-<p>Results on drug-gene relation type extraction:</p>
+<p>Drug-gene relation type extraction:</p>
 <img class="plain" style="width: 100%" src="img/biocreative2021r-x.png"/>
 <p>Named entity recognition/linking of chemicals:</p>
 <img class="plain" style="width: 100%" src="img/biocreative2021e-x.png"/>
 </section>
 
 <section>
+<h3>Text Mining is still very far from being good enough!</h3>
+<p>Back-of-the-envelope calculation for retrieving "thing A has relation R to thing B":</p>
+<ul>
+<li>0.87 * 0.81 (recognize/link A)</li>
+<li>0.80 (determine R)</li>
+<li>0.87 * 0.81 (recognize/link B)</li>
+<li>Overall: F-score of 0.40</li>
+</ul>
+</section>
+
+<section>
+<h3><span class="cem">"Text mining? ... Why bury it first and then mine it again?"</span> (Barend Mons)</h3>
+<!-- Source: https://doi.org/10.1186/1471-2105-6-142 -->
+<img class="plain stretch" src="img/burying.jpg"/>
+</section>
+
+<section>
 <h3>2021 Solution:</h3>
 <img class="plain stretch" src="img/biocurator.png"/>
+</section>
+
+<section>
+<h3>Is 2022 any Different?</h3>
+<p>...</p>
+<img class="plain stretch" src="img/journal.jpg"/>
+</section>
+
+<section>
+<h3>75 Random Articles</h3>
+...
+</section>
+
+<section>
+<h3>How to Formally Represent Scientific Claims: Super Pattern</h3>
+<small>
+<p> "If there is an instance of transient oxidative stress in the context of a rat brain endothelial cell then it generally affects an instance of Pgp expression in the same context."</p>
+<ul>
+<li>Context class: rat brain endothelial cell</li>
+<li>Subject class: transient oxidative stress</li>
+<li>Qualifier: generally</li>
+<li>Relation: affects</li>
+<li>Object class: Pgp expression</li>
+</ul>
+</small>
+<img class="plain stretch" src="img/logic.png"/>
+</section>
+
+<section>
+<h3>Formalization Papers</h3>
+<p>...</p>
+</section>
+
+<section>
+<img class="plain stretch" src="img/nanobench.png"/>
+</section>
+
+<section>
+<h3>Formalization Paper</h3>
+<img class="plain stretch" src="img/formalization-paper.png"/>
+</section>
+
+<section>
+<h3>Nanopublications</h3>
+<img class="plain stretch" src="img/assertion-provenance.png"/>
+</section>
+
+<section>
+<h3>Network of Nanopublications</h3>
+<img class="plain stretch" src="img/np-graph.svg"/>
 </section>
 
 <section>
