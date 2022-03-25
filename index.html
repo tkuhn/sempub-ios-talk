@@ -35,15 +35,23 @@ VU Amsterdam
 </p>
 </section>
 
-<section>
-<h3>Scientific Knowledge</h3>
-...
+<section data-transition="slide-in">
+<img class="plain stretch" src="img/knowledge1.svg"/>
+</section>
+
+<section data-transition="none">
+<img class="plain stretch" src="img/knowledge2.svg"/>
+</section>
+
+<section data-transition="none">
+<img class="plain stretch" src="img/knowledge3.svg"/>
 </section>
 
 <section>
-<h3>Task</h3>
-<p>Retrieve all genes that have been found to play a role in a part of the respiratory system in Covid-19 patients.</p>
-<p>Only include results from randomized controlled trials published in the last seven days.</p>
+<img class="plain stretch" src="img/knowledge.svg"/>
+<h3><span class="cem2">Task for a Developer:</span></h3>
+<p><em>Retrieve all genes that have been found to play a role in a part of the respiratory system in Covid-19 patients. Only include results from randomized controlled trials published in the last seven days.</em></p>
+<p><span class="cem">Sounds easy on the face of it...</span></p>
 </section>
 
 <section>
@@ -52,7 +60,7 @@ VU Amsterdam
 </section>
 
 <section>
-<h3>Relation Mining was not Good Enough in 2015</h3>
+<h3>Relation Mining in 2015</h3>
 <p>Chemical-disease relation extraction:</p>
 <img class="plain stretch" src="img/biocreative2015.png"/>
 <p/>
@@ -67,14 +75,15 @@ VU Amsterdam
 </section>
 
 <section>
-<h3>Text Mining is still very far from being good enough!</h3>
-<p>Back-of-the-envelope calculation for retrieving "thing A has relation R to thing B":</p>
+<h3>Still very far from being good enough!</h3>
+<p>Rough F-score calculation "A has relation R to B":</p>
 <ul>
 <li>0.87 * 0.81 (recognize/link A)</li>
-<li>0.80 (determine R)</li>
-<li>0.87 * 0.81 (recognize/link B)</li>
-<li>Overall: F-score of 0.40</li>
+<li>* 0.87 * 0.81 (recognize/link B)</li>
+<li>* 0.80 (determine R)</li>
+<li>= 0.40</li>
 </ul>
+<p>Around 60% of retrieved relations are wrong and 60% of existing relations are not retrieved.</p>
 </section>
 
 <section>
