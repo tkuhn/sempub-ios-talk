@@ -1,3 +1,6 @@
 Reveal.initialize({
-  hash: true
+  hash: true,
+  width: 1244,
+  height: 700,
+  margin: 0.08
 });
