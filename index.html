@@ -73,24 +73,29 @@ VU Amsterdam
 </section>
 
 <section>
-<h3>Relation Mining in 2015</h3>
+<h3>Text Mining in 2015: <span class="cem">Not Good Enough</span></h3>
 <p>Chemical-disease relation extraction:</p>
-<img class="plain stretch" src="img/biocreative2015.png"/>
-<p/>
+<img class="plain" style="width: 60%" src="img/biocreative2015logo.png"/>
+<img class="plain" style="width: 60%" src="img/biocreative2015.svg"/>
 </section>
 
 <section>
 <img class="plain" style="width: 40%" src="img/biocreative2021logo.png"/>
+<div class="fragment">
 <p>Drug-gene relation type extraction:</p>
-<img class="plain" style="width: 70%" src="img/biocreative2021r.svg"/>
+<img class="plain" style="width: 90%; margin-top: -5mm;" src="img/biocreative2021r.svg"/>
+</div>
+<div class="fragment">
 <p>Named entity recognition/linking of chemicals:</p>
-<img class="plain" style="width: 70%" src="img/biocreative2021e.svg"/>
+<img class="plain" style="width: 90%; margin-top: -5mm;" src="img/biocreative2021e.svg"/>
+</div>
 </section>
 
 <section>
 <h3><span class="cem2">Still Not Good Enough (by far)</span></h3>
-<img class="plain stretch" src="img/fscore.svg"/>
-<p><span class="cem">Around 60% of retrieved relations are wrong and 60% of existing relations are not retrieved.</span></p>
+<p>Back-of-the-envelope calculation:</p>
+<img class="plain" style="width: 80%" src="img/fscore.svg"/>
+<p><span class="cem">🡆 Around 60% of retrieved relations are wrong and 60% of existing relations are not retrieved.</span></p>
 </section>
 
 <section>
@@ -100,37 +105,45 @@ VU Amsterdam
 </section>
 
 <section>
-<h3>Publishing without Burying: Special Issue at Data Science</h3>
-<img class="plain stretch" src="img/journal.jpg"/>
+<h3>Publishing without Burying</h3>
+<img class="plain" style="width: 25%; float: right; margin-left: 1cm;" src="img/journal.jpg"/>
+<ul style="display: block; margin-top: 3cm;">
+<li><span class="cem"><strong>Idea:</strong></span> Let authors publish the main findings of their papers in a machine-interpretable manner right away</li>
+<li><span class="cem">🡆</span> Special Issue at Data Science</li>
+</ul>
 </section>
 
 <section>
-<h3>Main Claims from 75 Random Articles across Disciplines</h3>
+<h3>How can we Formally Represent Scientific Findings?</h3>
+<p><span class="cem2">Let's check main findings from 75 random articles across disciplines:</span></p>
 <img class="plain stretch" src="img/75claims1.svg"/>
 </section>
 
 <section>
-<h3>Formally Represent Scientific Claims: Super Pattern</h3>
-<img class="plain stretch" src="img/felix.png"/>
-<small>
-<ul>
-<li>Context class: rat brain endothelial cell</li>
-<li>Subject class: transient oxidative stress</li>
-<li>Qualifier: generally</li>
-<li>Relation: affects</li>
-<li>Object class: Pgp expression</li>
+<h3>Formally Representing Findings: <span class="cem2">Super Pattern</span></h3>
+<img class="plain" style="width: 60%;" src="img/felix.png"/>
+<div class="fragment">
+<p style="margin-top: -2mm"><span class="cem">🡇</span></p>
+<ul style="font-size: 24pt">
+<li><span class="cem2"><strong>Context class:</strong></span> rat brain endothelial cell</li>
+<li><span class="cem2"><strong>Subject class:</strong></span> transient oxidative stress</li>
+<li><span class="cem2"><strong>Qualifier:</strong></span> generally</li>
+<li><span class="cem2"><strong>Relation:</strong></span> affects</li>
+<li><span class="cem2"><strong>Object class:</strong></span> Pgp expression</li>
 </ul>
-<p> "If there is an instance of transient oxidative stress in the context of a rat brain endothelial cell then it generally (in at least 90% of the cases) affects an instance of Pgp expression in the same context."</p>
-</small>
-<img class="plain stretch" src="img/logic.png"/>
+</div>
+<div class="fragment">
+<p><span class="cem">🡇</span></p>
+<img class="plain" style="width: 90%; margin-top: -2mm;" src="img/logic.png"/>
+</div>
 </section>
 
 <section>
-<h3>Main Claims from 75 Random Articles across Disciplines</h3>
+<h3>Main Findings from 75 Random Articles across Disciplines</h3>
 <img class="plain stretch" src="img/75claims.svg"/>
 <ul>
-<li><span class="cem2">68 can be represented with the super pattern</span></li>
-<li><span class="cem">7 are simple subject-predicate-object statements</span></li>
+<li><span class="cem2">68 can be represented with the super pattern!</span></li>
+<li><span class="cem">Remaining 7 are simple subject-predicate-object statements</span></li>
 </ul>
 </section>
 
@@ -148,14 +161,34 @@ VU Amsterdam
 <img class="plain stretch" src="img/nanobench.png"/>
 </section>
 
-<section>
+<section data-transition="slide-in">
 <h3>Formalization Paper (What Humans See)</h3>
-<img class="plain stretch" src="img/formalization-paper.png"/>
+<img class="plain stretch" src="img/formalization-paper1.svg"/>
 </section>
 
-<section>
+<section data-transition="none">
+<h3>Formalization Paper (What Humans See)</h3>
+<img class="plain stretch" src="img/formalization-paper2.svg"/>
+</section>
+
+<section data-transition="none">
+<h3>Formalization Paper (What Humans See)</h3>
+<img class="plain stretch" src="img/formalization-paper.svg"/>
+</section>
+
+<section data-transition="none">
+<h3>Formalization Paper (What Humans See)</h3>
+<img class="plain stretch" src="img/formalization-paper-x.svg"/>
+</section>
+
+<section data-transition="slide-in">
 <h3>Formalization Paper (What Machines See)</h3>
-<img class="plain stretch" src="img/assertion-provenance.png"/>
+<img class="plain stretch" src="img/nanopub-bot1.svg"/>
+</section>
+
+<section data-transition="none">
+<h3>Formalization Paper (What Machines See)</h3>
+<img class="plain stretch" src="img/nanopub-bot.svg"/>
 </section>
 
 <section>
