@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 for f in *.svg; do
-  if grep -q 'font-family: "Virgil"' "$f"; then
+  if grep -q 'font-family: "Virgil"' "$f" && [[ $f != *.p.svg ]]; then
     if grep -q 'stream;base64,d09GMk9UVE8AAO9AAAkAA' "$f"; then
       echo "Already processed: $f"
     else
